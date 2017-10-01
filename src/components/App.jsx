@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './css/common/reset.css';
-import './css/App.css';
+import 'css/common/reset.css';
+import 'css/App.css';
 
 function App() {
   return (

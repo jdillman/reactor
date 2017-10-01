@@ -2,6 +2,14 @@
 
 Easy to use react boilplate based off create-react-app. React router for navigation, redux for state management and a modified airbnb eslint ruleset.
 
+```
+// Start development environment
+npm start
+
+// Build a production package
+npm build
+```
+
 ## Tech ##
 
 * React 16
@@ -22,6 +30,3 @@ Easy to use react boilplate based off create-react-app. React router for navigat
   /shared        <-  Shared
   /screens       <-  Page layout (usually an endpoint as well)
 ```
-
-
-

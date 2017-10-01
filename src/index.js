@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import configureStore from './configureStore';
-import registerServiceWorker from './registerServiceWorker';
+import configureStore from 'configureStore';
+import registerServiceWorker from 'registerServiceWorker';
+import App from 'components/App';
 
-const initialState = {};
-const store = configureStore(initialState);
+const store = configureStore();
 
 /* eslint-disable react/jsx-filename-extension */
 ReactDOM.render(
