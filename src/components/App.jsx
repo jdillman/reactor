@@ -8,7 +8,7 @@ function Home() {
   return 'Home';
 }
 
-function Resume() {
+function About() {
   return 'Resume';
 }
 
@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/resume" component={Resume} />
+        <Route path="/about" component={About} />
       </Switch>
       <main className="app-main">Body</main>
       <footer className="app-footer">Footer</footer>
