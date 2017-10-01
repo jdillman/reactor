@@ -1,5 +1,9 @@
-import { applyMiddleware, createStore, compose, combineReducers } from 'redux';
-
+import {
+  applyMiddleware,
+  createStore,
+  compose,
+  combineReducers,
+} from 'redux';
 // Reducers
 import ui from './modules/UIModule';
 
