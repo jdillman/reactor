@@ -4,5 +4,6 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// eslint-disable-next-line
+ReactDOM.render(React.createElement(App), document.getElementById('root'));
 registerServiceWorker();
