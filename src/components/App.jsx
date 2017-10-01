@@ -1,38 +1,43 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
+
+import Urls from 'lib/urls';
+import ItemScreen from 'components/screens/ItemScreen';
 
 import 'css/common/reset.css';
 import 'css/App.css';
 
-function Home() {
-  return 'Home';
-}
-
-function About() {
-  return 'Resume';
+function HomeScreen() {
+  return <a href={Urls.GITHUB}>Reactor Bootstrap</a>;
 }
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-      <main className="app-main">Body</main>
+      <header className="app-header">Header</header>
+      <main className="app-main">
+        <nav className="main-nav">
+          <Link to="/">Home</Link>
+          <Link to="/item">Item</Link>
+          <ul>
+            <Link to="/item/123">123</Link>
+            <Link to="/item/abc">abc</Link>
+          </ul>
+        </nav>
+        <section className="main-content">
+          <Route exact path="/" component={HomeScreen} />
+          <Route path="/item/:itemId" component={ItemScreen} />
+          <Route
+            path="/item"
+            exact
+            render={() => (
+              <span>No Item selected</span>
+            )}
+          />
+        </section>
+      </main>
       <footer className="app-footer">Footer</footer>
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="app-header">
-      <section className="header-logo">header</section>
-      <section className="header-center" />
-      <section className="header-account" />
-    </header>
   );
 }
 
