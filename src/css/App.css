@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-header {
+  color: #333;
+  background: lightblue;
+  text-align: center;
+}
+
+.app-main {
+  background: lightyellow;
+  flex: 1;
+}
