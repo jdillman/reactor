@@ -1,8 +1,13 @@
-Default React build bootstrapped from [Create React App](https://github.com/facebookincubator/create-react-app).
+# Reactor #
 
-React 16
-Webpack 3
-Redux using ducks
-Airbnb eslint
+Easy to use react boilplate based off create-react-app
+
+## Tech ##
+
+* React 16
+* react-router
+* Webpack 3
+* Redux using ducks
+* Airbnb eslint
 
 
