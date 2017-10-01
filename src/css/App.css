@@ -14,3 +14,7 @@
   background: lightyellow;
   flex: 1;
 }
+
+.app-footer {
+  padding: 5px;
+}
