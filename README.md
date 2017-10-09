@@ -10,11 +10,12 @@ npm start
 npm build
 ```
 
-## Tech ##
+## Packages ##
 
 * React 16
 * react-router
 * Webpack 3
+* classnames
 * Redux
     * [ducks](https://github.com/erikras/ducks-modular-redux)
 

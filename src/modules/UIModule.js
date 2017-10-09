@@ -2,7 +2,7 @@
 export const UI_READY = 'ui:ready';
 
 // Actions
-export function windowMaximize() {
+export function appStart() {
   return { type: UI_READY };
 }
 
